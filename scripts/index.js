@@ -1,4 +1,6 @@
+'use strict';
 
+/*eslint-env jquery*/
 
 /* global shoppingList, cuid */
 
@@ -10,5 +12,3 @@ $(document).ready(function() {
   shoppingList.render();
 });
 
-console.log(Item);
-console.log(foo);

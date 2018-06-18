@@ -1,5 +1,7 @@
 'use strict';
 
+/*eslint-env jquery*/
+
 /* global store, cuid */
 
 // eslint-disable-next-line no-unused-vars
