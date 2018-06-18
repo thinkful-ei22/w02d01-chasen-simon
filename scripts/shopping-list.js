@@ -2,7 +2,7 @@
 
 /*eslint-env jquery*/
 
-
+/* global store, Item*/
 
 // eslint-disable-next-line no-unused-vars
 const shoppingList = (function(){
@@ -67,8 +67,8 @@ const shoppingList = (function(){
       render();
     }
     catch(e){
-      console.log(`Cannot add item: ${e.message}`)
-    };
+      console.log(`Cannot add item: ${e.message}`);
+    }
 
     // store.items.push({ id: cuid(), name: itemName, checked: false });
   }
