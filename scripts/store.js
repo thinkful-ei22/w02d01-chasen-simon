@@ -1,6 +1,6 @@
 'use strict';
 
-/* global Item*/
+/* global Item cuid*/
 
 const store = (function(){
 
@@ -50,7 +50,15 @@ const store = (function(){
     this.items.splice(index, 1);
   };
 
+  const toggleCheckedFilter = function() {
+    this.hideCheckedItems = !this.hideCheckedItems;
+  };
+
+  const setSearchTerm = function(val) {
+    this.searchTerm = val;
+  };
+
   return {
-    items, hideCheckedItems, searchTerm, findById, addItem, findToggleChecked, findAndUpdateName, findAndDelete
+    items, hideCheckedItems, searchTerm, findById, addItem, findToggleChecked, findAndUpdateName, findAndDelete, toggleCheckedFilter, setSearchTerm
   };
 }());

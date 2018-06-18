@@ -1,6 +1,6 @@
 'use strict';
 
-/* global shoppingList, cuid */
+/* global cuid */
 
 
 const Item = (function () {

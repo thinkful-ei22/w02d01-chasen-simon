@@ -2,7 +2,7 @@
 
 /*eslint-env jquery*/
 
-/* global shoppingList, cuid */
+/* global shoppingList*/
 
 // eslint-disable-next-line no-unused-vars
 
