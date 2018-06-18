@@ -14,9 +14,10 @@ const store = (function(){
   let searchTerm = '';
 
   const findById = function(id) {
-    store.items.find(item => {
+    let foundItemId = store.items.find(item => {
       return item.id === id;
     });
+    return foundItemId;
   };
 
   const addItem = function(name) {
@@ -31,7 +32,7 @@ const store = (function(){
   };
 
   const findToggleChecked = function(id) {
-    const foundItem = store.findById(id);
+    let foundItem = store.findById(id);
     foundItem.checked = !foundItem.checked;
   };
 
